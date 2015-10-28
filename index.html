@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" ng-app="myApp">
 <head>
-  <title>_scaffold</title>
+  <title>Pamela Cox Tutoring</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
 
@@ -18,12 +18,13 @@
   <header>
     <a class="brand" href='/'>Pamela Cox</a>
     <nav>
-      <a href="#about">About Me</a>
-      <a href="#experience">Experience</a>
+      <a href="#body">About Me</a>
+      <a href="#subjects">Subjects</a>
       <a href="#references">References</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
+
   <section class="head">
     
     <div class='logo'>
@@ -31,27 +32,50 @@
       <div class="bar"></div>
       <h2>Math Tutor</h2>
     </div>
+    
+    <div class="image">
+      <img src="assets/portrait.jpg" />
+    </div><!-- image -->
     <div class="arrow"></div> 
     
   </section>
   <section class="body" id='body'>
     
-    <div id="about">
+    <div class="container" id="about">
       <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium temporibus quos aliquam modi labore, reiciendis veniam soluta eaque, ab tempora eveniet laborum iusto aut esse magni commodi exercitationem iure ex!</p>
+      <p>For over <span class='emphasis'>10 years</span> I have tutored students from grade 1 through college. I've helped students <span class='emphasis'>improve scores</span> across multiple subjects and boost confidence in their abilities. <br />I graduated with a <span class='emphasis'>BS in Mathematics</span> from the University of Santa Clara.</p>
     </div><!-- #about -->
-
-    <div>
-      <h2>Education</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quod deserunt minus sequi sapiente praesentium quae, quisquam nostrum reprehenderit ipsum aspernatur nesciunt ex ratione voluptatum modi vero esse. Magni, voluptas.</p>
-    </div><!-- education -->
     
-    <div id="experience">
-      <h2>Experience</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum natus quidem aspernatur reiciendis, laboriosam recusandae reprehenderit atque quibusdam illo nisi deserunt facilis optio, cumque eum iusto. Nemo, placeat sit voluptatum.</p>
-    </div><!-- #experience -->
+    <div class="container" id="subjects">
+      <h2>Subjects</h2>
+      <p>I cover a variety of mathematical topics, including test preparation:</p>
+      
+      <div class="list">
+        <h3>Topics</h3>
+        <ul>
+          <li>Pre-algebra</li>
+          <li>Algebra 1</li>
+          <li>Algebra 2</li>
+          <li>Geometry</li>
+          <li>Trigonometry</li>
+          <li>General math</li>
+          <li>Word problems</li>
+        </ul>
+      </div><!-- list -->
+      <div class="list">
+        <h3>Test prep.</h3>
+        <ul>
+          <li>ACT</li>
+          <li>PSAT</li>
+          <li>SAT</li>
+          <li>CHSPE</li>
+          <li>GED</li>
+        </ul>
+      </div><!-- list -->
+      
+    </div><!-- #subjects -->
 
-    <div id="references">
+    <div class="container" id="references">
       <h2>References</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, porro iste sunt dignissimos. Quisquam minus dolores neque, sequi odio incidunt facilis quasi rerum, fugit animi ipsa suscipit ratione iusto. Esse.</p>
     </div><!-- #references -->
@@ -62,15 +86,23 @@
 
     <div id='contact'>
       <h1>Contact me</h1>
-      <p><svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg><span>123.999.1234</span</p>
-      <p><svg class="icon icon-home3"><use xlink:href="#icon-home3"></use></svg><span>Wildomar, CA</span></p>
-      <p><svg class="icon icon-envelop"><use xlink:href="#icon-envelop"></use></svg><span>hello@email.com</span></p>
+      <ul>
+        <li>
+          <svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg><span>123.999.1234</span>
+        </li>
+        <li>
+          <a href='mailto:hello@email.com'><svg class="icon icon-envelop"><use xlink:href="#icon-envelop"></use></svg>hello@email.com</span>
+        </li>
+        <li>
+          <svg class="icon icon-home3"><use xlink:href="#icon-home3"></use></svg><span>Wildomar, CA</span>
+        </li>
+      </ul>
     </div>
 
   </section>
 
   <footer>
-    <div>Designed by <a href="http://jonoco.me">jonoco</a> 2015</div>
+    <div>Designed by <a class='link' href="http://jonoco.me">jonoco</a> 2015</div>
   </footer>
 
   <svg style="display: none;">
