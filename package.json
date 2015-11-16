@@ -1,6 +1,6 @@
 {
   "name": "Pam Cox Tutoring",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tutoring website for Pam Cox",
   "devDependencies": {
     "babel": "5.8.29",
