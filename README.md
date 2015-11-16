@@ -1,3 +1,3 @@
-# _scaffold
+# Pam Cox Tutoring
 
-a simple scaffolding stucture to help bootstrap new projects
+A brochure tutoring site for Pam Cox
