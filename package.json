@@ -1,7 +1,7 @@
 {
-  "name": "tutor",
-  "version": "0.0.1",
-  "description": "A tutoring website",
+  "name": "Pam Cox Tutoring",
+  "version": "1.0.0",
+  "description": "A tutoring website for Pam Cox",
   "devDependencies": {
     "babel": "5.8.29",
     "gulp": "^3.8.11",
@@ -18,5 +18,5 @@
     "type": "git",
     "url": "?.git"
   },
-  "author": "Joshua Cox"
+  "author": "Joshua Cox, http://jonoco.me"
 }

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" ng-app="myApp">
 <head>
-  <title>Pamela Cox Tutoring</title>
+  <title>Pam Cox Tutoring</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
 
@@ -16,11 +16,11 @@
 </head>
 <body>
   <header>
-    <a class="brand" href='/'>Pamela Cox</a>
+    <a class="brand" href='/'>Pam Cox</a>
     <nav>
-      <a href="#body">About Me</a>
+      <a href="#about">About Me</a>
       <a href="#subjects">Subjects</a>
-      <a href="#references">References</a>
+      <a href="#flexible">Flexible</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -28,7 +28,7 @@
   <section class="head">
     
     <div class='logo'>
-      <h1>Pamela Cox</h1>
+      <h1>Pam Cox</h1>
       <div class="bar"></div>
       <h2>Math Tutor</h2>
     </div>
@@ -36,22 +36,22 @@
     <div class="image">
       <img src="assets/portrait.jpg" />
     </div><!-- image -->
-    <div class="arrow"></div> 
+    <a href="#about">
+      <div class="arrow"></div>   
+    </a>
     
-  </section>
-  <section class="body" id='body'>
+  </section><!-- .head -->
+  <section class="body">
     
     <div class="container" id="about">
       <h2>About Me</h2>
-      <p>For over <span class='emphasis'>10 years</span> I have tutored students from grade 1 through college. I've helped students <span class='emphasis'>improve scores</span> across multiple subjects and boost confidence in their abilities. <br />I graduated with a <span class='emphasis'>BS in Mathematics</span> from the University of Santa Clara.</p>
-    </div><!-- #about -->
-    
+      <p>For over <span class="emphasis">10 years</span> I have tutored students from grade 1 through college. I've helped students <span class="emphasis">improve scores</span> across multiple subjects and boost confidence in their abilities. <br />I graduated with a <span class="emphasis">BS in Mathematics</span> from the University of Santa Clara.</p>
+    </div><!-- #about --> 
     <div class="container" id="subjects">
       <h2>Subjects</h2>
       <p>I cover a variety of mathematical topics, including test preparation:</p>
       
       <div class="list">
-        <h3>Topics</h3>
         <ul>
           <li>Pre-algebra</li>
           <li>Algebra 1</li>
@@ -62,8 +62,8 @@
           <li>Word problems</li>
         </ul>
       </div><!-- list -->
+
       <div class="list">
-        <h3>Test prep.</h3>
         <ul>
           <li>ACT</li>
           <li>PSAT</li>
@@ -75,29 +75,47 @@
       
     </div><!-- #subjects -->
 
-    <div class="container" id="references">
-      <h2>References</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, porro iste sunt dignissimos. Quisquam minus dolores neque, sequi odio incidunt facilis quasi rerum, fugit animi ipsa suscipit ratione iusto. Esse.</p>
-    </div><!-- #references -->
-    
-  </section>
+    <div class="container" id="flexible">
+      <h2>Flexible</h2>
+      <div class="card-container">
+        <div class="card">
+          <svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg>
+          <p>Change appointments within one-days notice</p>  
+        </div>
+        <div class="card">
+          <svg class="icon icon-clock"><use xlink:href="#icon-clock"></use></svg>
+          <p>Work with your schedule to find the best times</p>  
+        </div>
+        <div class="card">
+          <svg class="icon icon-coin-dollar"><use xlink:href="#icon-coin-dollar"></use></svg>
+          <p>Never pay for appointments you miss</p>  
+        </div>
+      </div><!-- card-container -->
+    </div><!-- #flexible-->
 
-  <section class="foot">
-
-    <div id='contact'>
-      <h1>Contact me</h1>
+    <div class="container" id="contact">
+      <h2>Contact</h2>
       <ul>
         <li>
-          <svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg><span>123.999.1234</span>
+          <svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>
+          <span>951.265.6498</span>
+          <span class="subtle">(call or text)</span>
         </li>
         <li>
-          <a href='mailto:hello@email.com'><svg class="icon icon-envelop"><use xlink:href="#icon-envelop"></use></svg>hello@email.com</span>
+          <a href='mailto:pamcoxtutoring@gmail.com'>
+            <svg class="icon icon-envelop"><use xlink:href="#icon-envelop"></use></svg>
+            pamcoxtutoring@gmail.com
+          </a>
         </li>
         <li>
-          <svg class="icon icon-home3"><use xlink:href="#icon-home3"></use></svg><span>Wildomar, CA</span>
+          <svg class="icon icon-home3"><use xlink:href="#icon-home3"></use></svg>
+          <span>Wildomar, CA</span>
+        </li>
+        <li>
+          <span class="subtle">*References available on request</span>
         </li>
       </ul>
-    </div>
+    </div><!-- #contact -->
 
   </section>
 
@@ -117,6 +135,18 @@
     <symbol id="icon-envelop" viewBox="0 0 1024 1024">
       <title>envelop</title>
       <path class="path1" d="M928 128h-832c-52.8 0-96 43.2-96 96v640c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-640c0-52.8-43.2-96-96-96zM398.74 550.372l-270.74 210.892v-501.642l270.74 290.75zM176.38 256h671.24l-335.62 252-335.62-252zM409.288 561.698l102.712 110.302 102.71-110.302 210.554 270.302h-626.528l210.552-270.302zM625.26 550.372l270.74-290.75v501.642l-270.74-210.892z"></path>
+    </symbol>
+    <symbol id="icon-coin-dollar" viewBox="0 0 1024 1024">
+      <title>coin-dollar</title>
+      <path fill="#444444" class="path1" d="M480 64c-265.096 0-480 214.904-480 480 0 265.098 214.904 480 480 480 265.098 0 480-214.902 480-480 0-265.096-214.902-480-480-480zM480 928c-212.078 0-384-171.922-384-384s171.922-384 384-384c212.078 0 384 171.922 384 384s-171.922 384-384 384zM512 512v-128h128v-64h-128v-64h-64v64h-128v256h128v128h-128v64h128v64h64v-64h128.002l-0.002-256h-128zM448 512h-64v-128h64v128zM576.002 704h-64.002v-128h64.002v128z"></path>
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 1024 1024">
+      <title>clock</title>
+      <path fill="#444444" class="path1" d="M658.744 749.256l-210.744-210.746v-282.51h128v229.49l173.256 173.254zM512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM512 896c-212.078 0-384-171.922-384-384s171.922-384 384-384c212.078 0 384 171.922 384 384s-171.922 384-384 384z"></path>
+    </symbol>
+    <symbol id="icon-calendar" viewBox="0 0 1024 1024">
+      <title>calendar</title>
+      <path fill="#444444" class="path1" d="M320 384h128v128h-128zM512 384h128v128h-128zM704 384h128v128h-128zM128 768h128v128h-128zM320 768h128v128h-128zM512 768h128v128h-128zM320 576h128v128h-128zM512 576h128v128h-128zM704 576h128v128h-128zM128 576h128v128h-128zM832 0v64h-128v-64h-448v64h-128v-64h-128v1024h960v-1024h-128zM896 960h-832v-704h832v704z"></path>
     </symbol>
   </svg>
 
