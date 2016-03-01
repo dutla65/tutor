@@ -1,3 +1,5 @@
 # Pam Cox Tutoring
 
-A brochure tutoring site for Pam Cox
+A static tutoring site for Pam Cox.
+
+[Hosted here](http://pamtutoring.com/)
