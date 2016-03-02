@@ -100,8 +100,7 @@ footer {
 
 .body {
 	width: 100%;
-	background: hsl(0, 0, 90%);
-	padding-top: 10px;
+	//padding-top: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -119,10 +118,11 @@ footer {
 	}
 	.container {
 		min-width: 300px;
-		width: 80vw;
 		max-width: 700px;
+		width: 80vw;
 		padding-top: 75px;
 		margin-bottom: 10px;
+		margin: 0 auto;
 	}
 	.emphasis {
 		font-weight: 700;
@@ -132,7 +132,13 @@ footer {
 		color: hsl(0, 0, 30%);
 		font-size: 0.7em;
 	}
+	#about{
+		background: hsl(0, 0, 90%);
+		width: 100vw;
+	},
 	#subjects {
+		background: hsl(0, 0, 75%);
+		width: 100vw;
 		.list {
 			display: inline-block;
 			vertical-align: top;
@@ -151,16 +157,13 @@ footer {
 		}	
 	}
 	#flexible {
+		background: hsl(0, 0, 90%);
+		width: 100vw;
 		h2 { margin-bottom: 25px;}
 		.icon {
 			height: 4em;
 			width: 4em;
 
-		}
-		.card-container {
-			// display: flex;
-			// flex-direction: row;
-			// align-items: center;
 		}
 		.card {
 			margin: 10px;
