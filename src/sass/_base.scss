@@ -49,7 +49,7 @@ header {
 }
 
 footer {
-	height: 60px;
+	height: 40px;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -106,21 +106,26 @@ footer {
 	align-items: center;
 
 	h2 {
-		text-align: left; 
-		font-size: 2em;
+		text-align: center; 
+		font-size: 2.5em;
 		font-weight: 700;
-		color: hsl(0,0,15%);
+		color: $color-accent;
 	}
 	p {
 
 		font-size: 1.3em;
 		color: hsl(0,0,10%);
 	}
+	a {
+		transition: all .1s ease;
+		&:hover { color: $color-accent1; }
+	}
 	.container {
 		min-width: 300px;
 		max-width: 700px;
 		width: 80vw;
 		padding-top: 75px;
+		padding-bottom: 35px;
 		margin-bottom: 10px;
 		margin: 0 auto;
 	}
@@ -137,7 +142,7 @@ footer {
 		width: 100vw;
 	},
 	#subjects {
-		background: hsl(0, 0, 75%);
+		background: hsl(0, 0, 85%);
 		width: 100vw;
 		.list {
 			display: inline-block;
@@ -157,7 +162,7 @@ footer {
 		}	
 	}
 	#flexible {
-		background: hsl(0, 0, 90%);
+		background: hsl(0, 0, 100%);
 		width: 100vw;
 		h2 { margin-bottom: 25px;}
 		.icon {
