@@ -19,5 +19,8 @@
     "type": "git",
     "url": "https://github.com/jonoco/tutor.git"
   },
-  "author": "Joshua Cox, http://jonoco.me"
+  "author": "Joshua Cox, http://jonoco.me",
+  "dependencies": {
+    "smooth-scroll": "github:cferdinandi/smooth-scroll"
+  }
 }

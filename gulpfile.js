@@ -9,13 +9,18 @@ prefix    = require('gulp-autoprefixer');
 
 gulp.task('html', function() {
   gulp.src('./index.html')
-})
+});
+
+gulp.task('library', function() {
+  gulp.src('node_modules/smooth-scroll/dist/js/smooth-scroll.min.js')
+    .pipe(gulp.dest('dist/'));
+});
 
 gulp.task('js', function() {
   gulp.src('src/js/*.js')
-    .pipe(babel())
-    .pipe(rename('script.js'))
-    .pipe(gulp.dest('./'))
+    // .pipe(babel())
+    // .pipe(rename('script.js'))
+    .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('sass', function() {
@@ -24,7 +29,7 @@ gulp.task('sass', function() {
     .pipe(prefix())
     .pipe(minifyCSS())
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('watch', function() {
@@ -41,4 +46,4 @@ gulp.task('webserver', function() {
     }));
 });
 
-gulp.task('default', ['watch', 'js', 'sass', 'html', 'webserver']);
+gulp.task('default', ['watch', 'js', 'sass', 'html', 'library', 'webserver']);
