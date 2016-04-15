@@ -1,1 +1,3 @@
-smoothScroll.init();
+(function() {
+	smoothScroll.init();	
+}());
